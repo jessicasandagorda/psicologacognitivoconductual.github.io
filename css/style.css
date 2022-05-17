@@ -1,0 +1,396 @@
+
+html {
+    font-family: "Libre Baskerville";
+}
+
+section{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+:root {
+    --blue: rgb(0, 41, 132);
+    --pink: rgb(136, 57, 151);
+    --black: #212529; 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+span{
+    font-style: italic;
+}
+
+h1{
+    color: var(--pink);
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    color: var(--black);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer{
+        position: static;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        background: var(--pink);
+        height: auto;
+        width: 100%;
+        color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    line-height: 3rem;
+    margin-block-end: 0;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline-start: 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-bottom p{
+    float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+ }
+ .footer-bottom p a{
+   color:#44bae8;
+   font-size: 16px;
+   text-decoration: none;
+ }
+ .footer-bottom span{
+     text-transform: uppercase;
+     opacity: .4;
+     font-weight: 200;
+ }
+
+
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+    position: sticky;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    color: var(--blue);
+   }
+   .nav-links a {
+    color: var(--blue);
+   }
+
+   .nav-links a:hover {
+    color: white;
+   }
+
+   /* NAVBAR MENU */
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+   }
+   .menu li:hover {
+    background-color: var(--pink);
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s ease;
+   }
+   .menu li {
+    padding: 5px 14px;
+   }
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+ display: none;
+} 
+/*HAMBURGER MENU*/
+.hamburger {
+ display: none;
+ font-size: 24px;
+ user-select: none;
+}
+
+.banner-image{
+    display: block;
+    width: 100%;
+    max-height: 18.75rem;
+    margin-bottom: 2%;
+}
+
+.button{
+    position: relative;
+    padding: 8px 20px;
+    width: fit-content;
+    background: var(--blue);
+    border-radius: 5px;
+    text-decoration: none;
+    color: white; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    margin-top: auto;
+}
+
+.card-button{
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+.grid-rrss {
+    display: grid;
+    gap: 3rem;
+    justify-items: center;
+}
+
+.rrss-image{
+    width: 75px;
+    height: 75px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1rem;
+}
+
+.info-rrss-container{
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.instagram-title{
+    background-image: url(../img/instagram.png);
+    width: 100px;
+    height: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.linkedin-title{
+    margin: 0; 
+    margin-bottom: 3px; 
+    font-family: myriad-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #0077B5;
+}
+
+.user-rrss{
+    opacity: 0.7;
+}
+
+.logo-ig{
+    background-image: url(../img/Instagram_Glyph_Gradient_RGB.png);
+}
+
+.logo-in{
+    background-image: url(../img/LI-In-Bug.png);
+}
+.grid-journal{
+    display: grid;
+    gap: 3rem;
+    justify-items: center;
+    margin-bottom: 2rem;
+}
+
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+    h1{
+        font-size: 1.313rem;
+        color: var(--pink);
+    }
+
+    p{
+        font-size: 0.875rem;
+    }
+
+    section{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    input[type=checkbox]:checked ~ .menu{
+        display: block;
+    }
+    
+    .menu { 
+        display:none;
+        position: absolute;
+        background-color: white;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+        margin-top: 10px;
+        box-shadow: 1px 1px 2px var(--pink);
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: var(--pink);
+        transition: 0.3s ease;
+    }
+    .menu li + li {
+        margin-top: 12px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hero-image{
+        height: 150px;
+    }
+
+    .card-sobre-mi{
+        border: 1px solid var(--blue);
+        border-radius: 8px;
+        padding-left: 14px;
+        padding-right: 14px; 
+        text-align: justify;
+        line-height: 1.5rem;
+    }
+
+    .grid-rrss {
+        display: grid;
+        gap: 1rem;
+        justify-items: center;
+    }
+
+    .card-rrss-box{
+        position: relative;
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        width: 300px;
+        height: 100px;
+        box-shadow: inset 5px 5px 5px rgba(136, 57, 151, 0.2),
+          inset -5px -5px 15px rgba(0, 41, 132, 0.1),
+          5px 5px 15px rgba(136, 57, 151, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1); 
+    }
+
+
+    .cards-journal{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        max-width: 545px;
+        min-height: 350px;
+        box-shadow: inset 5px 5px 5px rgba(0, 41, 132, 0.2),
+          inset -5px -5px 15px rgba(136, 57, 151, 0.1),
+          5px 5px 15px rgba(0, 41, 132, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        padding-bottom: 10px;    
+    }
+
+    .card-veteranos-image{
+        background-image: url(../img/veteranos-image.jpg);
+    }
+
+    .card-videojuegos-image{
+        background-image: url(../img/pueden-ser-los-videojuegos-una-adiccion.jpg);
+    }
+    .card-ghosting-image{
+        background-image: url(../img/ghosting-journal-image.jpg);
+    }
+
+    .card-celiaquia-image{
+        background-image: url(../img/celiaquia.jpg);
+    }
+
+    .card-autismo-image{
+        background-image: url(../img/autismo.jpg);
+    }
+
+    .card-journal-content{
+        padding-left: 1rem;
+    }
+
+    .card-journal-image{
+        border-radius: 16px 16px 0 0  ;
+        min-height: 35%;
+        width: 100%;
+        background-size: cover;
+        background-position: top;
+        z-index: -1;
+    }
+
+    .grid-journal{
+        display: grid;
+        gap: 1rem;
+    }
+
+    .form-container{
+        display: flex;
+        flex-direction: column;
+        gap: 0.65rem;
+        margin-bottom: 2rem;
+    }
+}
