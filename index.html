@@ -128,17 +128,20 @@
         <h1>Contacto</h1>
         <form action="https://formsubmit.co/jessicasandagorda@gmail.com" method="POST" class="form-container">
             <label for="name">Nombre</label>
-            <input type="text" name="name">
+            <input type="text" name="name" required>
     
             <label for="email">Correo electrónico</label>
-            <input type="email" name="email">
+            <input type="email" name="email" required>
+
+            <label for="phone">Teléfono</label>
+            <input type="tel" name="email" required>
     
             <label for="subject">Asunto</label>
             <input type="text" name="subject">
             <label for="comments">Comentarios</label>
             <textarea name="comments" cols="15" rows="5"></textarea>
     
-            <input type="submit" value="Enviar">
+            <button type="submit" class="button form-buttom">Enviar</button>
         </form>
     </section>
     <footer>

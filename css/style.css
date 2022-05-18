@@ -27,6 +27,10 @@ span{
     font-style: italic;
 }
 
+button {
+    border-style: none;
+}
+
 h1{
     color: var(--pink);
     margin-top: 3rem;
@@ -127,6 +131,10 @@ footer{
      text-transform: uppercase;
      opacity: .4;
      font-weight: 200;
+ }
+
+ .form-buttom{
+     margin-left: auto;
  }
 
 
