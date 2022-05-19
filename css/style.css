@@ -145,7 +145,7 @@ label {
 
 /* NAVBAR STYLING STARTS */
 .navbar {
-    position: sticky;
+    position: fixed;
     width: 100%;
     display: flex;
     align-items: center;
@@ -153,6 +153,7 @@ label {
     padding: 20px;
     background-color: white;
     color: var(--blue);
+    z-index: 1;
    }
    .nav-links a {
     color: var(--blue);
@@ -338,6 +339,13 @@ input[type=checkbox]{
     background-image: url(../img/autismo.jpg);
 }
 
+.form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    margin-bottom: 2rem;
+}
+
 
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 768px) {
@@ -413,12 +421,5 @@ input[type=checkbox]{
     .card-journal-box{
         width: auto;
         height: 350px;
-    }
-
-    .form-container{
-        display: flex;
-        flex-direction: column;
-        gap: 0.65rem;
-        margin-bottom: 2rem;
     }
 }
