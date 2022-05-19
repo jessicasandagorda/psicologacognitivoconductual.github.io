@@ -1,6 +1,6 @@
 
 html {
-    font-family: "Libre Baskerville";
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 section{
@@ -23,18 +23,20 @@ body {
     height: 100%;
 }
 
-span{
-    font-style: italic;
-}
-
 button {
     border-style: none;
 }
 
 h1{
+    font-family: "Libre Baskerville";
     color: var(--pink);
     margin-top: 3rem;
     margin-bottom: 1rem;
+}
+
+h3{
+    color: var(--black);
+    
 }
 
 a {
@@ -47,7 +49,7 @@ li {
 
 p {
     color: var(--black);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 footer{
@@ -62,6 +64,10 @@ footer{
         color: #fff;
 }
 
+label {
+    color: var(--black)
+}
+
 .footer-content{
     display: flex;
     align-items: center;
@@ -70,19 +76,23 @@ footer{
     text-align: center;
 }
 
-.footer-content h3{
-    font-size: 2.1rem;
-    font-weight: 500;
-    line-height: 3rem;
+.footer-content h4{
     margin-block-end: 0;
+    color: #cacdd2;
+}
+
+.footer-content h5{
+    margin: 0.2rem;
+    color: #cacdd2;
 }
 
 .footer-content p{
-    max-width: 500px;
-    margin: 10px auto;
+    max-width: 300px;
+    margin: 5px auto;
     line-height: 28px;
-    font-size: 14px;
+    font-size: 10px;
     color: #cacdd2;
+    padding-left: 10px;
 }
 
 .socials{
@@ -111,26 +121,20 @@ footer{
 }
 
 .footer-bottom{
-    background: #000;
+    background: rgb(29, 27, 27);
     width: 100vw;
-    padding: 10px;
     text-align: center;
 }
 
 .footer-bottom p{
     float: left;
-    font-size: 14px;
+    font-size: 10px;
     word-spacing: 2px;
  }
  .footer-bottom p a{
    color:#44bae8;
-   font-size: 16px;
+   font-size: 10px;
    text-decoration: none;
- }
- .footer-bottom span{
-     text-transform: uppercase;
-     opacity: .4;
-     font-weight: 200;
  }
 
  .form-buttom{
@@ -195,25 +199,40 @@ input[type=checkbox]{
 
 .button{
     position: relative;
-    padding: 8px 20px;
-    width: fit-content;
+    display: flex;
+    width: 115px;
+    min-height: 36px;
+    justify-content: center;
+    align-items: center;
     background: var(--blue);
     border-radius: 5px;
     text-decoration: none;
     color: white; 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    margin-top: auto;
 }
 
 .card-button{
-    margin-left: auto;
+    align-self: flex-end;
     margin-right: 5%;
+    margin-top: auto;
 }
 
-.grid-rrss {
-    display: grid;
+.containter-rrss {
+    display: flex;
+    flex-direction: row;
     gap: 3rem;
-    justify-items: center;
+    justify-content: space-evenly;
+}
+
+.card-rrss-box{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 100px;
+    box-shadow: inset 5px 5px 5px rgba(136, 57, 151, 0.2),
+      inset -5px -5px 15px rgba(0, 41, 132, 0.1),
+      5px 5px 15px rgba(136, 57, 151, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1); 
 }
 
 .rrss-image{
@@ -264,7 +283,59 @@ input[type=checkbox]{
     display: grid;
     gap: 3rem;
     justify-items: center;
+    grid-template-columns: 1fr 1fr;
     margin-bottom: 2rem;
+}
+
+.card-journal-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 350px;
+    box-shadow: inset 5px 5px 5px rgba(0, 41, 132, 0.2),
+      inset -5px -5px 15px rgba(136, 57, 151, 0.1),
+      5px 5px 15px rgba(0, 41, 132, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding-bottom: 10px;    
+}
+
+.card-journal-box h3 {
+    margin-bottom: 0;
+    padding-left: 1rem;
+}
+
+.card-journal-box p {
+    padding-left: 1rem;
+
+}
+
+.card-journal-image{
+    border-radius: 16px 16px 0 0  ;
+    min-height: 35%;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    z-index: -1;
+}
+
+.card-veteranos-image{
+    background-image: url(../img/veteranos-image.jpg);
+}
+
+.card-videojuegos-image{
+    background-image: url(../img/pueden-ser-los-videojuegos-una-adiccion.jpg);
+}
+.card-ghosting-image{
+    background-image: url(../img/ghosting-journal-image.jpg);
+}
+
+.card-celiaquia-image{
+    background-image: url(../img/celiaquia.jpg);
+}
+
+.card-autismo-image{
+    background-image: url(../img/autismo.jpg);
 }
 
 
@@ -297,7 +368,6 @@ input[type=checkbox]{
         text-align: center;
         padding: 16px 0;
         margin-top: 10px;
-        box-shadow: 1px 1px 2px var(--pink);
     }
 
     .menu li:hover {
@@ -332,67 +402,17 @@ input[type=checkbox]{
         justify-items: center;
     }
 
-    .card-rrss-box{
-        position: relative;
-        display: flex;
-        flex: 1;
-        flex-direction: row;
-        width: 300px;
-        height: 100px;
-        box-shadow: inset 5px 5px 5px rgba(136, 57, 151, 0.2),
-          inset -5px -5px 15px rgba(0, 41, 132, 0.1),
-          5px 5px 15px rgba(136, 57, 151, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1); 
-    }
-
-
-    .cards-journal{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        max-width: 545px;
-        min-height: 350px;
-        box-shadow: inset 5px 5px 5px rgba(0, 41, 132, 0.2),
-          inset -5px -5px 15px rgba(136, 57, 151, 0.1),
-          5px 5px 15px rgba(0, 41, 132, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
-        border-radius: 15px;
-        padding-bottom: 10px;    
-    }
-
-    .card-veteranos-image{
-        background-image: url(../img/veteranos-image.jpg);
-    }
-
-    .card-videojuegos-image{
-        background-image: url(../img/pueden-ser-los-videojuegos-una-adiccion.jpg);
-    }
-    .card-ghosting-image{
-        background-image: url(../img/ghosting-journal-image.jpg);
-    }
-
-    .card-celiaquia-image{
-        background-image: url(../img/celiaquia.jpg);
-    }
-
-    .card-autismo-image{
-        background-image: url(../img/autismo.jpg);
-    }
-
-    .card-journal-content{
-        padding-left: 1rem;
-    }
-
-    .card-journal-image{
-        border-radius: 16px 16px 0 0  ;
-        min-height: 35%;
-        width: 100%;
-        background-size: cover;
-        background-position: top;
-        z-index: -1;
-    }
-
     .grid-journal{
         display: grid;
-        gap: 1rem;
+        gap: 3rem;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        margin-bottom: 2rem;
+    }
+
+    .card-journal-box{
+        width: auto;
+        height: 350px;
     }
 
     .form-container{
