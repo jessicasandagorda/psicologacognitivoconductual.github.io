@@ -214,6 +214,26 @@ label {
      font-weight: 500;
  }
 
+ .article-cards-container{
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+ }
+
+ .article-card-box{
+    display: flex;
+    flex-direction: column; 
+    width: 	100%;
+    min-height: 200px;
+    background-color: #fff;
+     padding: 20px;
+ }
+
+ .article-card-box h3 {
+     margin-top: 0;
+     margin-bottom: 10px;
+ }
+
 
 /* NAVBAR STYLING STARTS */
 .navbar {
