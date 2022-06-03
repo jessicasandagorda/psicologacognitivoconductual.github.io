@@ -63,6 +63,7 @@ p {
   
 #content-wrap {
     padding-bottom: 15rem;
+    padding-top: 80px;
 }
 
 footer{
@@ -196,8 +197,21 @@ label {
  }
 
  .article-title{
-     margin-top: 120px;
      color: var(--blue);
+     margin-top: 0;
+ }
+
+ .article-text{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: #fff;
+ }
+
+ .article-text a {
+     text-decoration: underline;
+     font-weight: 500;
  }
 
 
@@ -253,9 +267,7 @@ input[type=checkbox]{
 .banner-image{
     display: block;
     width: 100%;
-    position: relative;
-    top: 100px;
-    margin-bottom: 12%;
+    margin-bottom: 1rem;
 }
 
 .button{
@@ -431,11 +443,6 @@ input[type=checkbox]{
 
     p{
         font-size: 0.875rem;
-    }
-
-    section{
-        padding-left: 10%;
-        padding-right: 10%;
     }
 
     input[type=checkbox]:checked ~ .menu{
