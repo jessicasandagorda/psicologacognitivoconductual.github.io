@@ -310,69 +310,6 @@ input[type=checkbox]{
     margin-top: auto;
 }
 
-.containter-rrss {
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
-    justify-content: space-evenly;
-}
-
-.card-rrss-box{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    width: 300px;
-    height: 100px;
-    background-color: #fff;
-    box-shadow: inset 5px 5px 5px rgba(136, 57, 151, 0.2),
-      inset -5px -5px 15px rgba(0, 41, 132, 0.1),
-      5px 5px 15px rgba(136, 57, 151, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1); 
-}
-
-.rrss-image{
-    width: 75px;
-    height: 75px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 1rem;
-}
-
-.info-rrss-container{
-    margin-left: 1rem;
-    margin-top: 1rem;
-}
-.instagram-title{
-    background-image: url(../img/instagram.png);
-    width: 100px;
-    height: 30px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.linkedin-title{
-    margin: 0; 
-    margin-bottom: 3px; 
-    font-family: myriad-pro, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    color: #0077B5;
-}
-
-.user-rrss{
-    opacity: 0.7;
-}
-
-.logo-ig{
-    background-image: url(../img/Instagram_Glyph_Gradient_RGB.png);
-}
-
-.logo-in{
-    background-image: url(../img/LI-In-Bug.png);
-}
 .grid-journal{
     display: grid;
     gap: 3rem;
